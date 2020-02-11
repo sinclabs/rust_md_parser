@@ -1,3 +1,4 @@
+// https://www.markdownguide.org/cheat-sheet/
 static MD_STRING: &str = "
 # Hello
 ---
@@ -32,6 +33,41 @@ fn main() {
 
 fn parse(md_string: String) -> String {
     let mut html_string = String::from("");
+
+    let md_chars = md_string.chars().peekable();
+
+    for c in md_chars {
+        match c {
+            '#' => {
+
+            }
+            '-' => {
+
+            }
+            '*' => {
+
+            }
+            '>' => {
+
+            }
+            '`' => {
+
+            }
+            '[' => {
+
+            }
+            '!' => {
+                
+            }
+            '\n' => {
+
+            }
+            _ => {
+
+            }
+        }
+    }
+
 
     let md_lines = md_string.lines();
     for line in md_lines {
